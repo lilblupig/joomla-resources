@@ -15,7 +15,3 @@ CREATE TABLE `#__resourceman` (
 	AUTO_INCREMENT = 0
 	DEFAULT CHARSET = utf8mb4 /* Changed from utf8 per author */
 	DEFAULT COLLATE = utf8mb4_unicode_ci; /* Added field per author */
-
-INSERT INTO `#__resourceman` (`title`, `borough`, `for`, `img_path`, `img_alt`, `resource_url`) VALUES
-('Resource One', 'Kingston', 'Children', '', 'words about image 1', 'https://google.com'),
-('Resource Two', 'Wandsworth', 'Professionals', '', 'words about image 1', 'https://google.co.uk');
