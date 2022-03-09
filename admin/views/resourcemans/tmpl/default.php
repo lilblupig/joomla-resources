@@ -75,7 +75,7 @@ defined('_JEXEC') or die('Restricted Access');
 							<?php echo $row->for; ?>
 						</td>
 						<td>
-							<?php echo $row->img_path; ?>
+							<img src="<?php echo $row->img_path; ?>" style="width:128px; height:128px;" />
 						</td>
 						<td>
 							<?php echo $row->img_alt; ?>
