@@ -31,7 +31,7 @@ class JFormFieldResourceMan extends JFormFieldList
 	{
 		$db    = JFactory::getDBO();
 		$query = $db->getQuery(true);
-		$query->select('id,title');
+		$query->select('id,title,borough');
 		$query->from('#__resourceman');
 		$db->setQuery((string) $query);
 		$messages = $db->loadObjectList();
