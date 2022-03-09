@@ -1,25 +1,20 @@
 <?php
 /**
  * @package     Joomla.Administrator
- * @subpackage  com_helloworld
- *
- * @copyright   Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @subpackage  com_resourcemanager
  */
 
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
 /**
- * HTML View class for the HelloWorld Component
- *
- * @since  0.0.1
+ * HTML View class for the ResourceMan Component
  */
 
-class HelloWorldViewHelloWorld extends JViewLegacy
+class ResourceManViewResourceMan extends JViewLegacy
 {
 	/**
-	 * Display the Hello World view
+	 * Display the ResourceMan view
 	 *
 	 * @param   string  $tpl  The name of the template file to parse; automatically searches through the template paths.
 	 *

@@ -1,20 +1,17 @@
 <?php
 /**
  * @package     Joomla.Administrator
- * @subpackage  com_helloworld
- *
- * @copyright   Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @subpackage  com_resourcemanager
  */
+
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
 /**
- * HelloWorldList Model
- *
- * @since  0.0.1
+ * ResourceManList Model
  */
-class HelloWorldModelHelloWorlds extends JModelList
+
+class ResourceManModelResourceMans extends JModelList
 {
 	/**
 	 * Method to build an SQL query to load the list data.
@@ -29,7 +26,7 @@ class HelloWorldModelHelloWorlds extends JModelList
 
 		// Create the base select statement.
 		$query->select('*')
-                ->from($db->quoteName('#__helloworld'));
+                ->from($db->quoteName('#__resourceman'));
 
 		return $query;
 	}

@@ -8,9 +8,9 @@
 defined('_JEXEC') or die('Restricted access');
 
 /**
- * ResourceMan Component Controller
+ * ResourceMan Controller
  */
 
-class ResourceManController extends JControllerLegacy
+class ResourceManControllerResourceMan extends JControllerForm
 {
 }

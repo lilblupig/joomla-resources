@@ -1,24 +1,21 @@
 <?php
 /**
  * @package     Joomla.Administrator
- * @subpackage  com_helloworld
- *
- * @copyright   Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @subpackage  com_resourcemanager
  */
 
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
 /**
- * HelloWorlds View
+ * ResourceMans View
  *
  * @since  0.0.1
  */
-class HelloWorldViewHelloWorlds extends JViewLegacy
+class ResourceManViewResourceMans extends JViewLegacy
 {
 	/**
-	 * Display the Hello World view
+	 * Display the ResourceMan view
 	 *
 	 * @param   string  $tpl  The name of the template file to parse; automatically searches through the template paths.
 	 *
@@ -54,9 +51,9 @@ class HelloWorldViewHelloWorlds extends JViewLegacy
 	 */
 	protected function addToolBar()
 	{
-		JToolbarHelper::title(JText::_('COM_HELLOWORLD_MANAGER_HELLOWORLDS'));
-		JToolbarHelper::addNew('helloworld.add');
-		JToolbarHelper::editList('helloworld.edit');
-		JToolbarHelper::deleteList('', 'helloworlds.delete');
+		JToolbarHelper::title(JText::_('COM_RESOURCEMAN_MANAGER_RESOURCEMANS'));
+		JToolbarHelper::addNew('resourceman.add');
+		JToolbarHelper::editList('resourceman.edit');
+		JToolbarHelper::deleteList('', 'resourcemans.delete');
 	}
 }

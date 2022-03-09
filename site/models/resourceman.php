@@ -1,21 +1,18 @@
 <?php
 /**
  * @package     Joomla.Administrator
- * @subpackage  com_helloworld
- *
- * @copyright   Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @subpackage  com_resourcemanager
  */
 
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
 /**
- * HelloWorld Model
+ * ResourceMan Model
  *
  * @since  0.0.1
  */
-class HelloWorldModelHelloWorld extends JModelItem
+class ResourceManModelResourceMan extends JModelItem
 {
 	/**
 	 * @var array messages
@@ -33,7 +30,7 @@ class HelloWorldModelHelloWorld extends JModelItem
 	 *
 	 * @since   1.6
 	 */
-	public function getTable($type = 'HelloWorld', $prefix = 'HelloWorldTable', $config = array())
+	public function getTable($type = 'ResourceMan', $prefix = 'ResourceManTable', $config = array())
 	{
 		return JTable::getInstance($type, $prefix, $config);
 	}
@@ -58,7 +55,7 @@ class HelloWorldModelHelloWorld extends JModelItem
 			$jinput = JFactory::getApplication()->input;
 			$id     = $jinput->get('id', 1, 'INT');
 
-			// Get a TableHelloWorld instance
+			// Get a TableResourceMan instance
 			$table = $this->getTable();
 
 			// Load the message
