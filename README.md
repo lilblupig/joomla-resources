@@ -1,8 +1,8 @@
-# **Joomla Hello World!**
+# **Joomla Resource Manager!**
 
 # Overview
 
-Work through the Joomla Docs tutorial [Developing an MVC Component](https://docs.joomla.org/J3.x:Developing_an_MVC_Component/).  Currently complete to part 10 of 35, outputting a particular greeting to a page and allowing an admin user CRUD fuctionality to add/remove/update outputtable options.
+Based on the first ten sections of the tutorial [Developing an MVC Component](https://docs.joomla.org/J3.x:Developing_an_MVC_Component/).  This component will allow a Joomla admin user with appropriate authority to create and maintain a library of resources.  The next step is to create a way to output this information in a way other than using a menu item, such as a module.
 
 # Index
 1. [Features](#features)
@@ -18,7 +18,7 @@ Work through the Joomla Docs tutorial [Developing an MVC Component](https://docs
 * Front end text output to page via assignment to menu item.
 
 ### **Features for Future Implementation**
-* The other 25 steps, not sure what they are yet!
+* Create module or similar to output data in a way which can be appended to any article.
 
 ## Technologies Used
 
@@ -38,7 +38,7 @@ You can find information on cloning a repository from GitHub [here](https://docs
 ## Credits
 
 ### **Content**
-The content used for the website is drawn directly from the Joomla Documentation.
+The content used for the project is drawn directly from the Joomla Documentation.
 
 ### **Acknowledgements**
 Joomla Docs.
@@ -47,8 +47,8 @@ Robbie Jackson for tutorial videos.
 ### **Other**
 * Markdown basic taken from [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 
-**This website was produced as an educational project for personal development experience with Joomla.**
+**This component was produced as an educational project for personal development experience with Joomla.**
 
 **Created by Amy Hacker.**
 
-[Back to Top](#joomla-hello-world)
+[Back to Top](#joomla-resource-manager)
