@@ -8,11 +8,73 @@
 		<field
             name="title"
             type="text"
-            label="COM_RESOURCEMAN_RESOURCEMAN_GREETING_LABEL"
-            description="COM_RESOURCEMAN_RESOURCEMAN_GREETING_DESC"
+            label="COM_RESOURCEMAN_RESOURCEMAN_TITLE_LABEL"
+            description="COM_RESOURCEMAN_RESOURCEMAN_TITLE_DESC"
             size="40"
             class="inputbox"
             default=""
+            required="true"
+        />
+        <field
+            name="borough"
+            type="list"
+            label="COM_RESOURCEMAN_RESOURCEMAN_BOROUGH_LABEL"
+            description="COM_RESOURCEMAN_RESOURCEMAN_BOROUGH_DESC"
+            size="5"
+            class="inputbox"
+            default=""
+            required="true"
+        >
+            <option value="">Please Select</option>
+            <option value="None">None</option>
+            <option value="Kingston">Kingston</option>
+            <option value="Merton">Merton</option>
+            <option value="Richmond">Richmond</option>
+            <option value="Sutton">Sutton</option>
+            <option value="Wandsworth">Wandsworth</option>
+        </field>
+        <field
+            name="for"
+            type="list"
+            label="COM_RESOURCEMAN_RESOURCEMAN_FOR_LABEL"
+            description="COM_RESOURCEMAN_RESOURCEMAN_FOR_DESC"
+            size="5"
+            class="inputbox"
+            default=""
+            required="true"
+        >
+            <option value="">Please Select</option>
+            <option value="Children">Children</option>
+            <option value="Parents and Carers">Parents and Carers</option>
+            <option value="Professionals">Professionals</option>
+            <option value="Schools">Schools</option>
+        </field>
+        <field
+            name="img_path"
+            type="media"
+            label="COM_RESOURCEMAN_RESOURCEMAN_IMGPATH_LABEL"
+            description="COM_RESOURCEMAN_RESOURCEMAN_IMGPATH_DESC"
+            required="true"
+        />
+        <field
+            name="img_alt"
+            type="text"
+            label="COM_RESOURCEMAN_RESOURCEMAN_IMGALT_LABEL"
+            description="COM_RESOURCEMAN_RESOURCEMAN_IMGALT_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="true"
+        />
+        <field
+            name="resource_url"
+            type="text"
+            label="COM_RESOURCEMAN_RESOURCEMAN_RESOURCEURL_LABEL"
+            description="COM_RESOURCEMAN_RESOURCEMAN_RESOURCEURL_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="true"
         />
 	</fieldset>
 </form>
