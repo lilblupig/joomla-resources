@@ -18,14 +18,23 @@ defined('_JEXEC') or die('Restricted Access');
 			<th width="2%">
 				<?php echo JHtml::_('grid.checkall'); ?>
 			</th>
-			<th width="30%">
+			<th width="15%">
 				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_TITLE') ;?>
 			</th>
-			<th width="30%">
+			<th width="15%">
 				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_BOROUGH') ;?>
 			</th>
-			<th width="30%">
+			<th width="15%">
 				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_FOR') ;?>
+			</th>
+			<th width="15%">
+				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_IMGPATH') ;?>
+			</th>
+			<th width="15%">
+				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_IMGALT') ;?>
+			</th>
+			<th width="15%">
+				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_RESOURCEURL') ;?>
 			</th>
 			<th width="5%">
 				<?php echo JText::_('COM_RESOURCEMAN_PUBLISHED'); ?>
@@ -64,6 +73,15 @@ defined('_JEXEC') or die('Restricted Access');
 						</td>
 						<td>
 							<?php echo $row->for; ?>
+						</td>
+						<td>
+							<?php echo $row->img_path; ?>
+						</td>
+						<td>
+							<?php echo $row->img_alt; ?>
+						</td>
+						<td>
+							<?php echo $row->resource_url; ?>
 						</td>
 						<td align="center">
 							<?php echo JHtml::_('jgrid.published', $row->published, $i, 'resourcemans.', true, 'cb'); ?>
