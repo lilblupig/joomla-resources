@@ -1,21 +1,17 @@
 <?php
 /**
  * @package     Joomla.Administrator
- * @subpackage  com_helloworld
- *
- * @copyright   Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @subpackage  com_resourcemanager
  */
 
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
 /**
- * HelloWorld View
- *
- * @since  0.0.1
+ * ResourceMan View
  */
-class HelloWorldViewHelloWorld extends JViewLegacy
+
+class ResourceManViewResourceMan extends JViewLegacy
 {
 	/**
 	 * View form
@@ -25,12 +21,13 @@ class HelloWorldViewHelloWorld extends JViewLegacy
 	protected $form = null;
 
 	/**
-	 * Display the Hello World view
+	 * Display the ResourceMan view
 	 *
 	 * @param   string  $tpl  The name of the template file to parse; automatically searches through the template paths.
 	 *
 	 * @return  void
 	 */
+
 	public function display($tpl = null)
 	{
 		// Get the Data
@@ -71,17 +68,17 @@ class HelloWorldViewHelloWorld extends JViewLegacy
 
 		if ($isNew)
 		{
-			$title = JText::_('COM_HELLOWORLD_MANAGER_HELLOWORLD_NEW');
+			$title = JText::_('COM_RESOURCEMAN_MANAGER_RESOURCEMAN_NEW');
 		}
 		else
 		{
-			$title = JText::_('COM_HELLOWORLD_MANAGER_HELLOWORLD_EDIT');
+			$title = JText::_('COM_RESOURCEMAN_MANAGER_RESOURCEMAN_EDIT');
 		}
 
-		JToolbarHelper::title($title, 'helloworld');
-		JToolbarHelper::save('helloworld.save');
+		JToolbarHelper::title($title, 'resourceman');
+		JToolbarHelper::save('resourceman.save');
 		JToolbarHelper::cancel(
-			'helloworld.cancel',
+			'resourceman.cancel',
 			$isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE'
 		);
 	}

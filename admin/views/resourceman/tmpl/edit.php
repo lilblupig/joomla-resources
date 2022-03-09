@@ -1,21 +1,18 @@
 <?php
 /**
  * @package     Joomla.Administrator
- * @subpackage  com_helloworld
- *
- * @copyright   Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @subpackage  com_resourcemanager
  */
 
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
 ?>
-<form action="<?php echo JRoute::_('index.php?option=com_helloworld&layout=edit&id=' . (int) $this->item->id); ?>"
+<form action="<?php echo JRoute::_('index.php?option=com_resourceman&layout=edit&id=' . (int) $this->item->id); ?>"
     method="post" name="adminForm" id="adminForm">
     <div class="form-horizontal">
         <fieldset class="adminform">
-            <legend><?php echo JText::_('COM_HELLOWORLD_HELLOWORLD_DETAILS'); ?></legend>
+            <legend><?php echo JText::_('COM_RESOURCEMAN_RESOURCEMAN_DETAILS'); ?></legend>
             <div class="row-fluid">
                 <div class="span6">
                     <?php 
@@ -27,6 +24,6 @@ defined('_JEXEC') or die('Restricted access');
             </div>
         </fieldset>
     </div>
-    <input type="hidden" name="task" value="helloworld.edit" />
+    <input type="hidden" name="task" value="resourceman.edit" />
     <?php echo JHtml::_('form.token'); ?>
 </form>

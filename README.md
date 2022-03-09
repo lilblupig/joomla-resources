@@ -1,4 +1,4 @@
-# **Joomla Resource Manager!**
+# **Joomla Resource Manager**
 
 # Overview
 

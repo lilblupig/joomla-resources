@@ -1,20 +1,17 @@
 <?php
 /**
  * @package     Joomla.Administrator
- * @subpackage  com_helloworld
- *
- * @copyright   Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @subpackage  com_resourcemanager
  */
+
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
 /**
- * HelloWorlds Controller
- *
- * @since  0.0.1
+ * ResourceMans Controller
  */
-class HelloWorldControllerHelloWorlds extends JControllerAdmin
+
+class ResourceManControllerResourceMans extends JControllerAdmin
 {
 	/**
 	 * Proxy for getModel.
@@ -24,10 +21,9 @@ class HelloWorldControllerHelloWorlds extends JControllerAdmin
 	 * @param   array   $config  Configuration array for model. Optional.
 	 *
 	 * @return  object  The model.
-	 *
-	 * @since   1.6
 	 */
-	public function getModel($name = 'HelloWorld', $prefix = 'HelloWorldModel', $config = array('ignore_request' => true))
+
+	public function getModel($name = 'ResourceMan', $prefix = 'ResourceManModel', $config = array('ignore_request' => true))
 	{
 		$model = parent::getModel($name, $prefix, $config);
 
