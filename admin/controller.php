@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     Joomla.Administrator
- * @subpackage  com_resourcesmanager
+ * @subpackage  com_resourcemanager
  */
 
 // No direct access to this file
@@ -18,5 +18,5 @@ class ResourceManController extends JControllerLegacy
 	 *
 	 * @var string
 	 */
-	protected $default_view = 'resourcesmans';
+	protected $default_view = 'resourcemans';
 }

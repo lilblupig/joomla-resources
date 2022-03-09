@@ -9,14 +9,12 @@ defined('_JEXEC') or die('Restricted access');
 
 /**
  * HTML View class for the ResourceMan Component
- *
- * @since  0.0.1
  */
 
 class ResourceManViewResourceMan extends JViewLegacy
 {
 	/**
-	 * Display the Hello World view
+	 * Display the ResourceMan view
 	 *
 	 * @param   string  $tpl  The name of the template file to parse; automatically searches through the template paths.
 	 *
