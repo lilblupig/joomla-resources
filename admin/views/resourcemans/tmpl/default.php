@@ -21,19 +21,19 @@ defined('_JEXEC') or die('Restricted Access');
 			<th width="15%">
 				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_TITLE') ;?>
 			</th>
-			<th width="15%">
+			<th width="10%">
 				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_BOROUGH') ;?>
 			</th>
-			<th width="15%">
+			<th width="10%">
 				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_FOR') ;?>
 			</th>
 			<th width="15%">
 				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_IMGPATH') ;?>
 			</th>
-			<th width="15%">
+			<th width="20%">
 				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_IMGALT') ;?>
 			</th>
-			<th width="15%">
+			<th width="20%">
 				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_RESOURCEURL') ;?>
 			</th>
 			<th width="5%">
