@@ -2,6 +2,9 @@
 /**
  * @package     Joomla.Administrator
  * @subpackage  com_resourcemanager
+ * 
+ * View for admin table display
+ * 
  */
 
 // No direct access to this file
@@ -15,8 +18,14 @@ defined('_JEXEC') or die('Restricted Access');
 			<th width="2%">
 				<?php echo JHtml::_('grid.checkall'); ?>
 			</th>
-			<th width="90%">
-				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_NAME') ;?>
+			<th width="30%">
+				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_TITLE') ;?>
+			</th>
+			<th width="30%">
+				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_BOROUGH') ;?>
+			</th>
+			<th width="30%">
+				<?php echo JText::_('COM_RESOURCEMAN_RESOURCEMANS_FOR') ;?>
 			</th>
 			<th width="5%">
 				<?php echo JText::_('COM_RESOURCEMAN_PUBLISHED'); ?>
@@ -49,6 +58,12 @@ defined('_JEXEC') or die('Restricted Access');
 							<a href="<?php echo $link; ?>" title="<?php echo JText::_('COM_RESOURCEMAN_EDIT_RESOURCEMAN'); ?>">
 								<?php echo $row->title; ?>
 							</a>
+						</td>
+						<td>
+							<?php echo $row->borough; ?>
+						</td>
+						<td>
+							<?php echo $row->for; ?>
 						</td>
 						<td align="center">
 							<?php echo JHtml::_('jgrid.published', $row->published, $i, 'resourcemans.', true, 'cb'); ?>

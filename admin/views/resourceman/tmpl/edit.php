@@ -2,6 +2,9 @@
 /**
  * @package     Joomla.Administrator
  * @subpackage  com_resourcemanager
+ * 
+ * View for add or edit resource
+ * 
  */
 
 // No direct access
